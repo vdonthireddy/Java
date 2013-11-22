@@ -21,7 +21,7 @@ public class HelloWorld {
 //            rs = stmt.executeQuery("SELECT * FROM Category");
             rs = stmt.executeQuery("uspGetAllCategories");
             while (rs.next()) {
-                System.out.println(rs.getString("Id") + "\t" + rs.getString("Code") + "\t" + rs.getString("Description"));
+                System.out.println(rs.getString("CategoryId") + "\t" + rs.getString("Code") + "\t" + rs.getString("Description"));
             }
 
         } catch (Exception ex) {
